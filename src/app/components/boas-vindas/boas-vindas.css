@@ -1,0 +1,40 @@
+.mensagem {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    height: 50vh;
+    align-self: center;
+    justify-self: center;
+    background-color: #fff;
+    border: 2px solid #777777;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px; /* Distância do topo */
+    right: 10px; /* Distância da direita */
+    background: transparent;
+    border: none;
+    color: #000;
+    font-size: 1.5rem; /* Tamanho do "X" */
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: red; /* Altera a cor quando o botão é hover */
+}
+
+.mensagem__header {
+    background-color: #00000015;
+    border-bottom: 0.5px solid #acabab;
+    padding: 1vh;
+}
+
+.mensagem__text {
+    padding: 1vh;
+    color: blue;
+}

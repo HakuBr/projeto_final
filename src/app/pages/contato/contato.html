@@ -1,0 +1,94 @@
+<!-- contato.component.html -->
+<div class="buttons__nav">
+    <app-menu></app-menu>
+    <button (click)="logout()" class="button__logout"></button>
+</div>
+
+<div class="forms">
+    <div>
+      <img src="assets/img/xls 2.2 diesel.jpg" alt="Imagem do carro diesel">
+    </div>
+    <div>
+      <h2 class="titulo">Sobre Você</h2>
+  
+      <!-- Usando ngForm para o Angular Template-driven Form -->
+      <form (ngSubmit)="onSubmit()">
+  
+        <input 
+          type="text" 
+          name="nome" 
+          placeholder="NOME*" 
+          class="fordform" 
+          required>
+  
+        <input 
+          type="text" 
+          name="email" 
+          placeholder="E-MAIL*" 
+          class="fordform" 
+          required>
+  
+        <input 
+          type="text" 
+          name="cpf" 
+          placeholder="CPF*" 
+          class="fordform" 
+          required>
+  
+        <input 
+          type="text" 
+          name="sobrenome" 
+          placeholder="SOBRENOME*" 
+          class="fordform" 
+          required>
+  
+        <input 
+          type="text" 
+          name="telefone" 
+          placeholder="TELEFONE*" 
+          class="fordform" 
+          required>
+  
+        <select 
+          name="contato" 
+          class="fordform" 
+          required>
+          <option value="" disabled selected>TIPO DE CONTATO</option>
+          <option>TELOGIO</option>
+          <option>RECLAMAÇÃO</option>
+          <option>SOLICITAÇÃO</option>
+        </select>
+  
+        <h2 class="titulo">Mensagem</h2>
+        <textarea 
+          name="mensagem" 
+          class="fordform" 
+          rows="4" 
+          placeholder="Digite sua mensagem aqui...">
+        </textarea>
+  
+        <p class="textLGPD">
+          Os dados serão mantidos em nossa base de <br> dados  só enquanto for desejado por você. <br>
+          A qualquer momento será possível editar ou remover <br> tais dados.
+        </p>
+        <a href="https://www.ford.com.br/politica-de-privacidade/" class="textLGPD">Termos e Condições</a>
+        <br>
+  
+        <input 
+          type="checkbox" 
+          class="checkbox" 
+          required>
+        <span class="textLGPD"> Sim, li e concordo com os vossos termos.</span>
+        <br>
+  
+        <input 
+          type="checkbox" 
+          class="checkbox" >
+        <span class="textLGPD"> Sim, também quero receber descontos e novidades</span>
+        <br><br>
+  
+        <button type="submit" id="button">Enviar</button>
+      </form>
+    </div>
+  </div>
+  

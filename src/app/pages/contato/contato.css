@@ -1,0 +1,95 @@
+.fordform {
+    display: block;
+    width: 300px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    height: 26px;
+    margin: 8px;
+    font-size: 13px;
+    padding: 5px;
+}
+
+select.fordform {
+    width: 310px;
+    height: 36px;
+    color: #807d7d;
+}
+
+input:focus-visible, select:focus-visible {
+    outline: none;
+}
+
+main div {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.forms {
+    display: block;
+    text-align: center;
+}
+
+textarea.fordform {
+    height: 80px;
+    font-size: 13px;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    margin: 10px 10px;
+    color: #000;
+}
+
+h2 {
+    text-align: left;
+    font-weight: 800;
+}
+
+.textLGPD {
+    font-size: 15px;
+}
+
+.checkbox {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #1b357e;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    margin-right: 8px;
+    float: right;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.titulo {
+    margin-left: 8px;
+}
+
+.buttons__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6vh 0.6vw;
+  }
+  
+  .button__logout {
+    background-image: url("/logout.png");
+    width: 4vh;
+    height: 3.2vh;
+    margin-left: 0.5vh;
+    margin-top: 0.5vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: #ffff;
+  }
+  

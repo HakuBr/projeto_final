@@ -1,0 +1,40 @@
+
+  <form [formGroup]="loginForm" (ngSubmit)="loginJp()" class="login__form">
+
+      <div class="input__login">
+          <div class="div__input__login">
+            <img class="input__login__user__icon" src="user-account.png" alt="user-account" />
+            <input class="input__login__form" 
+            formControlName="nome" 
+            type="email" 
+            id="exampleInputEmail1" 
+            placeholder="Insira seu usuário aqui">  
+            <img class="input__login__img__info" src="info.png">
+              
+          </div>
+
+          <div class="div__input__login">
+            <img class="input__login__user__icon" src="lock.png" alt="user_account" />
+            <input class="input__login__form" 
+            formControlName="senha" 
+            type="password" 
+            id="exampleInputPassword1" 
+            placeholder="Insira sua senha aqui">  
+            <img class="input__login__img__info" src="info.png">
+          </div>
+      </div>
+
+      <div class="login__check">
+        <p>Logar automaticamente</p>
+        <div class="form-check form-switch">
+            <input class="form-check-input disabled" type="checkbox" role="switch" id="switchCheckChecked" checked>
+            <img class="input__login__img__info" src="info.png">
+        </div>
+      </div>
+      <button class="button__login" type="submit">Enviar</button>
+
+      <div class="menu__links">
+        <a class="link" (click)="navigateToCadastro()">Não é cadastrado? Se cadastre</a>
+      </div>
+  </form>
+
