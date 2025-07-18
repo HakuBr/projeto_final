@@ -1,16 +1,15 @@
-<button class="menu__button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></button>
+<ul class="nav nav-underline d-flex justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="['/home']" [class.active]="isActive('/home')">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/dashboard"  [class.active]="isActive('/dashboard')">Dashboard</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="['/contato']" [class.active]="isActive('/contato')">Contato</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="['/lancamento']" [class.active]="isActive('/lancamento')">Lançamento</a>
+  </li>
   
-  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header">
-      <img class="w-50" src="ford.png"/>
-    </div>
-
-    <div class="menu__links">
-      <a class="link" href="/home">Home</a>
-      <a class="link" href="/dashboard">Dashboard</a>
-      <a class="link" href="/contato">Contato</a>
-      <a class="link" href="/lancamento">Lançamento</a>
-    </div>
-  </div>
-  
-
+</ul>

@@ -1,0 +1,12 @@
+.button__logout {
+    background-image: url("/logout.png");
+    width: 4vh;
+    height: 3.2vh;
+    margin-left: 0.5vh;
+    margin-top: 0.5vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: #ffff;
+  }

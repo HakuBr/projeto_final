@@ -19,11 +19,11 @@ export const loginGuard: CanActivateFn = (route, state) => {
       router.navigate([""]);
       return false;
     }
-  } else {
+  } //else {
     // Caso esteja no servidor (SSR), simplesmente retorna true ou redireciona
-    console.log('Executando no servidor (SSR), não é possível acessar sessionStorage.');
-    return true; // Ou false, dependendo da lógica
-  }
+    //console.log('Executando no servidor (SSR), não é possível acessar sessionStorage.');
+    //return true; // Ou false, dependendo da lógica
+  //}
 
   return true;
 };

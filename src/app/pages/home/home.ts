@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { Menu } from "../../components/menu/menu";
 import { BoasVindas } from "../../components/boas-vindas/boas-vindas";
 import { Router } from '@angular/router';
+import { Copy } from "../../components/copy/copy";
 
 @Component({
   selector: 'app-home',

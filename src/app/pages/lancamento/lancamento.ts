@@ -3,6 +3,7 @@ import { Menu } from "../../components/menu/menu";
 import { Router } from '@angular/router';
 import { Car, CarService } from '../../services/car';
 import { CommonModule, CurrencyPipe } from '@angular/common';
+import { Copy } from "../../components/copy/copy";
 
 @Component({
   selector: 'app-lancamento',

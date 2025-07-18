@@ -10,7 +10,9 @@
             id="exampleInputEmail1" 
             placeholder="Insira seu usuário aqui">  
             <img class="input__login__img__info" src="info.png">
-              
+          </div>
+          <div *ngIf="nome?.invalid && nome?.touched" class="text-danger mt-1">
+            Usuário é obrigatório.
           </div>
 
           <div class="div__input__login">
@@ -23,6 +25,10 @@
             <img class="input__login__img__info" src="info.png">
           </div>
       </div>
+      <div *ngIf="senha?.invalid && senha?.touched" class="text-danger mt-1">
+        Senha é obrigatório.
+      </div>
+
 
       <div class="login__check">
         <p>Logar automaticamente</p>

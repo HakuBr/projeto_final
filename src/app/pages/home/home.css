@@ -12,12 +12,11 @@
     align-items: center;
     justify-content: center;
 }
-
-.nav__buttons {
-    display: flex;
+.buttons__nav {
+    
     justify-content: space-between;
     padding: 0.6vh 0.6vw;
-}
+  }
 
 .main__img {
     width: 80%;

@@ -2,10 +2,11 @@ import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { LoginS } from '../../services/login';
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-login-forms',
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './login-forms.html',
   styleUrl: './login-forms.css'
 })
@@ -43,5 +44,11 @@ export class LoginForms {
   }
   navigateToCadastro() {
     this.router.navigate(['/cadastro']);
+  }
+  get nome() {
+    return this.loginForm.get('nome');
+  }
+  get senha() {
+    return this.loginForm.get('senha');
   }
 }

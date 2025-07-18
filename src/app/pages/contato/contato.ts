@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { Menu } from "../../components/menu/menu";
 import { Router } from '@angular/router';
+import { Copy } from "../../components/copy/copy";
 
 @Component({
   selector: 'app-contato',

@@ -61,6 +61,7 @@ export class Dashboard implements OnInit{
       }
     })
   }
+  
 
   onChangeSelect(event: Event){
     const id = Number((event.target as HTMLSelectElement).value)
@@ -76,5 +77,18 @@ export class Dashboard implements OnInit{
       }
     })
   }
-   
+  carregarDashboard() {
+    this.dashboardService.getVeiculos().subscribe({
+      next: (veiculos) => {
+        this.veiculos = veiculos;
+        this.veiculoSelecionado = veiculos[0];
+  
+        this.dashboardService.getVinInfos(this.veiculoSelecionado.vin).subscribe({
+          next: (vinInfos) => {
+            this.vinInfos = vinInfos;
+          }
+        });
+      }
+    });
+  }
 }
